@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 //*Sub_Tips_065
@@ -20,11 +20,11 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　××会長さん、",
-		   NULL, "Chairman XX,", Line_WaitForInput);
+		   NULL, "M. le Directeur,", Line_WaitForInput);
 	OutputLine(NULL, "××会の皆さん、",
-		   NULL, " Members of the XX Party,", Line_WaitForInput);
+		   NULL, " chers membres de cette société,", Line_WaitForInput);
 	OutputLine(NULL, "この度は××会創立二十五周年、誠におめでとうございます。",
-		   NULL, " Congratulations are due, as we are celebrating 25 years since our founding.", Line_Normal);
+		   NULL, " laissez-moi commencer par vous féliciter en ce jour du 25ème anniversaire de la fondation de cette assemblée.", Line_Normal);
 	ClearMessage();
 
 
@@ -33,7 +33,7 @@ void main()
 //　この二十五年は、そのまま××県発展の歴史そのものでありました＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この二十五年は、そのまま××県発展の歴史そのものでありました。",
-		   NULL, "These past 25 years have seen much growth in XX Prefecture.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ces 25 années sont autant d'années de développement et de modernisation pour cette belle préfecture de ****.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -41,12 +41,12 @@ void main()
 //　かつては閑静で一面の田畑だった景色も＠念願であった新幹線停車駅の開業＠そして高速道路の整備により、今や若い活気の溢れる近代的都市に生まれ変わりました￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　かつては閑静で一面の田畑だった景色も、",
-		   NULL, "The once quiet scenery of nothing but fields,", Line_WaitForInput);
+		   NULL, "Jadis, ce n'était qu'un amas de champs de pissenlits,", Line_WaitForInput);
 	OutputLine(NULL, "念願であった新幹線停車駅の開業、",
-		   NULL, " now has seen the opening of a new stop for the bullet train, ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " mais aujourd'hui, nous avons des gares de TGV, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして高速道路の整備により、今や若い活気の溢れる近代的都市に生まれ変わりました。",
-		   NULL, "and with the development of the highway, we've seen the rebirth of a modern city bursting with youthful energy.", Line_Normal);
+		   NULL, "nous avons l'autoroute, nous avons une ville jeune et vivante.", Line_Normal);
 	ClearMessage();
 
 
@@ -55,7 +55,7 @@ void main()
 //　新しい良いものを次々と取り入れて発展する経済と産業＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　新しい良いものを次々と取り入れて発展する経済と産業。",
-		   NULL, "We've reaped the benefits of new businesses and industry.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "L'économie et l'industrie se sont développées mutuellement.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -63,10 +63,10 @@ void main()
 //　そして古き良き伝統を大切にする××県民特有の郷土愛により＠伝統と文化、経済と産業の全てを両立した日本有数の素晴らしい都市へと成長を遂げました＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして古き良き伝統を大切にする××県民特有の郷土愛により、",
-		   NULL, "And with the special reverence the residents of XX Prefecture have for time-honored traditions-- ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et grâce aux amoureux de cette région, grâce aux défenseurs des traditions du terroir, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "伝統と文化、経済と産業の全てを両立した日本有数の素晴らしい都市へと成長を遂げました。",
-		   NULL, "history and culture, business and industry--with these ideals in harmony, they have accomplished in growing their city into one of Japan's foremost metropolises.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "nous avons maintenant une ville magnifique, qui a soigné et préservé son passé tout en sécurisant son futur.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -74,7 +74,7 @@ void main()
 //　そして、この××県発展の歴史はそのまま、××会の発展の歴史そのものと言えるのであります￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、この××県発展の歴史はそのまま、××会の発展の歴史そのものと言えるのであります。",
-		   NULL, "Of course, the development of XX Prefecture couldn't have happened without the growth of the XX Party.", Line_Normal);
+		   NULL, "Et c'est pourquoi je pense que l'histoire de cette assemblée est exactement l'histoire de cette préfecture.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 56, 64 );
@@ -82,9 +82,9 @@ void main()
 //　私共には、一度決めて掲げた公約、施策はどこまでも貫き掲げとおす＠文字通り矢のような鋭い実行力が求められています＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私共には、一度決めて掲げた公約、施策はどこまでも貫き掲げとおす、",
-		   NULL, "We are resolved to see every one of our campaign promises to fruition,", Line_WaitForInput);
+		   NULL, "Aux hommes politiques, comme moi, qui font des promesses publiques,", Line_WaitForInput);
 	OutputLine(NULL, "文字通り矢のような鋭い実行力が求められています。",
-		   NULL, " reaching our targets definitively and expediently like arrows fired from a bow.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " on demande souvent du résultat.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -92,7 +92,7 @@ void main()
 //　この矢を会章にあしらった××会の皆さんは、まさにこの矢のごとき実行力を以て、××県民の恒久的幸せのために、あらゆる障害を貫く矢であると思っています￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この矢を会章にあしらった××会の皆さんは、まさにこの矢のごとき実行力を以て、××県民の恒久的幸せのために、あらゆる障害を貫く矢であると思っています。",
-		   NULL, "With these arrows as the fundamental bases of the XX Party, our members have sought to pierce the obstructions preventing the happiness of the residents of XX Prefecture.", Line_Normal);
+		   NULL, "On demande la volonté rigide et inaltérable de pousser les projets. Un peu comme une flèche qui percerait les obstacles jusqu'à sa cible.", Line_Normal);
 	ClearMessage();
 
 
@@ -101,7 +101,7 @@ void main()
 //　ですが皆さんはただの矢ではありません＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ですが皆さんはただの矢ではありません。",
-		   NULL, "But I do believe that everybody here is unlike an ordinary arrow.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et je pense que vous, chers membres, avez la résolution et la volonté nécessaire pour devenir cette flèche.", GetGlobalFlag(GLinemodeSp));
 
 
 
@@ -110,7 +110,7 @@ void main()
 //　矢のように剛直でまっすぐであると同時に、時代に即したやり方を常に模索して研究を怠らず、常に時代の先を見通す目も持っております＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　矢のように剛直でまっすぐであると同時に、時代に即したやり方を常に模索して研究を怠らず、常に時代の先を見通す目も持っております。",
-		   NULL, "While being as unfaltering and straightforward, we have not neglected in seeking solutions that conform to the current day and age while also keeping an eye on the future.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais n'oubliez pas que vous n'êtes pas simplement une flèche. Vous avez aussi le pouvoir de regarder autour de vous, d'utiliser les moyens de votre époque pour savoir ce dont vous aurez besoin plus tard.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -118,7 +118,7 @@ void main()
 //　放たれた矢は、一度決められた目標に向かってただただ飛ぶことしかできません￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　放たれた矢は、一度決められた目標に向かってただただ飛ぶことしかできません。",
-		   NULL, "An arrow, once loosed, can only fly to its destination.", Line_Normal);
+		   NULL, "Une flèche décochée ne peut pas revenir en arrière.", Line_Normal);
 	ClearMessage();
 
 
@@ -127,7 +127,7 @@ void main()
 //　しかし皆さんは、ただの矢ではない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかし皆さんは、ただの矢ではない。",
-		   NULL, "Everyone here, however, is no simple arrow.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais vous, vous n'êtes pas simplement une flèche.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -135,12 +135,12 @@ void main()
 //　一度、弓から放たれながらも、常に勉強を怠らず＠新しいやり方＠より効果的な施策を見つけ出すや、その矢の軌道を直ちに変えるという柔軟な姿勢も持つ、魔法の矢なのでもあります￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一度、弓から放たれながらも、常に勉強を怠らず、",
-		   NULL, "Even once loosed from the bow, without neglecting our studies,", Line_WaitForInput);
+		   NULL, "Même lorsque vous êtes décochée, vous pouvez continuer à étudier le problème, à observer l'évolution de la situation, à évoluer.", Line_WaitForInput);
 	OutputLine(NULL, "新しいやり方、",
-		   NULL, " while employing new methods, ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " En bref, vous pouvez modifier votre course pour atteindre une cible encore meilleure -- ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "より効果的な施策を見つけ出すや、その矢の軌道を直ちに変えるという柔軟な姿勢も持つ、魔法の矢なのでもあります。",
-		   NULL, "and implementing more effective and flexible ideas, thus being able to change trajectories midflight-- we are magical arrows.", Line_Normal);
+		   NULL, "vous êtes une flèche magique.", Line_Normal);
 	ClearMessage();
 
 
@@ -149,14 +149,14 @@ void main()
 //　時代は常に進歩しています＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　時代は常に進歩しています。",
-		   NULL, "The modern age marches ever forward.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le temps avance, et avec lui, le monde.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　時に、施策から実行に至る過程よりもさらに早く時代が進んでしまうこともありえます＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　時に、施策から実行に至る過程よりもさらに早く時代が進んでしまうこともありえます。",
-		   NULL, "Sometimes it marches faster than the time taken from planning to execution.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Parfois, il avance tellement vite qu'un projet se retrouve dépassé avant même d'avoir été mené à bien.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -164,9 +164,9 @@ void main()
 //（以下は原稿にない部分＠大臣のアドリブと思われる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（以下は原稿にない部分。",
-		   NULL, "(The following part was not in the script.", Line_WaitForInput);
+		   NULL, "(La partie qui suit n'était pas dans le script officiel.", Line_WaitForInput);
 	OutputLine(NULL, "大臣のアドリブと思われる）",
-		   NULL, " It is thought to have been adlibbed by the Minister.)", Line_Normal);
+		   NULL, " Le ministre a sûrement improvisé.)", Line_Normal);
 	ClearMessage();
 
 
@@ -175,11 +175,11 @@ void main()
 //　例えば、県内で近年、いろいろと問題になっている雛見沢村電源基本計画についても＠お上が決めたからこうと貫くのではなく、次代と郷土と県民の変わり続ける要望と常に照らし合わせて見直す柔軟さが必要なのです＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　例えば、県内で近年、いろいろと問題になっている雛見沢村電源基本計画についても、",
-		   NULL, "For example, there have recently been numerous problems with the Hinamizawa Power Plant Project. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pour prendre un exemple concret, regardons ce projet de barrage électrique à Hinamizawa. Il ne fait pas l'unanimité, depuis bien longtemps il est un sujet qui fâche. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "お上が決めたからこうと貫くのではなく、次代と郷土と県民の変わり続ける要望と常に照らし合わせて見直す柔軟さが必要なのです。",
-		   NULL, "Rather than forcing through the project solely because it was decided upon by the government, it is necessary to reflect on and adjust to the ever-changing needs of the residents, the region, and the next generation.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il ne faut pas simplement le mener à bien “parce que les gens d'en haut en ont décidé ainsi”, mais voir s'il réflète les besoins des générations futures et le modifier en conséquence.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -187,18 +187,18 @@ void main()
 //　雛見沢ダムを巡る住民運動もまた＠××県民の意思なのであり＠すでに決まった施策であるからこれに耳を貸す必要がないとなれば、これは戦後日本の民主政治に悪い影を落とすことになりかねません￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢ダムを巡る住民運動もまた、",
-		   NULL, "The protests by the local residents that surround the Hinamizawa Dam,", Line_WaitForInput);
+		   NULL, "Les mouvements de manifestations contre le barrage", Line_WaitForInput);
 	OutputLine(NULL, "××県民の意思なのであり、",
-		   NULL, " these are also the will of the people of XX Prefecture. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " reflètent eux aussi la volonté de cette préfecture de ****. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "すでに決まった施策であるからこれに耳を貸す必要がないとなれば、これは戦後日本の民主政治に悪い影を落とすことになりかねません。",
-		   NULL, "If you feel that there is no need to listen because the project has already been finalized, then you do nothing more than shed a poor light on Japan's postwar democracy.", Line_Normal);
+		   NULL, "Si nous refusons de les écouter sous prétexte que les grands de ce monde ont pris une décision, alors cela ne présage rien de bon pour le peuple japonais.", Line_Normal);
 	ClearMessage();
 
 //（以下から原稿のとおり￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（以下から原稿のとおり）",
-		   NULL, "(The following is as per the script.)", Line_Normal);
+		   NULL, "(Par la suite, le ministre s'en tient au script)", Line_Normal);
 	ClearMessage();
 
 
@@ -207,7 +207,7 @@ void main()
 //　私も日本国民の、そして××県民の皆さんの恒久的幸せのために、これと決めた施策は徹底的に＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私も日本国民の、そして××県民の皆さんの恒久的幸せのために、これと決めた施策は徹底的に。",
-		   NULL, "For the lasting happiness of the citizens of Japan and the residents of XX Prefecture, please consider these policies thoroughly.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pour garantir le bonheur à venir du peuple japonais, et en particulier le vôtre, chers habitants, je mènerai à bien tous les projets.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -215,7 +215,7 @@ void main()
 //　だけれども常に時代の先を見据えながら、そのやり方を模索できる××会の皆さんの柔軟性を学ばなければならないなと常日頃思わされるわけであります￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だけれども常に時代の先を見据えながら、そのやり方を模索できる××会の皆さんの柔軟性を学ばなければならないなと常日頃思わされるわけであります。",
-		   NULL, "I believe, however, we have all gained something from the flexibility and foresight of the XX Party.", Line_Normal);
+		   NULL, "Mais je les mènerai en y réfléchissant, et en les modifiant si nécessaire, dans l'intérêt du plus grand nombre. Ainsi, comme vous, chers membres, mes flèches deviendront magiques et trouveront une cible encore meilleure.", Line_Normal);
 	ClearMessage();
 
 
@@ -224,20 +224,20 @@ void main()
 //　長くなりましたが＠以上を持ちまして××会二十五周年のお祝いの言葉とかえさせていただきます＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　長くなりましたが、",
-		   NULL, "I've taken up much of your time,", Line_WaitForInput);
+		   NULL, "Mais je parle, je parle, et je vous ennuie !", Line_WaitForInput);
 	OutputLine(NULL, "以上を持ちまして××会二十五周年のお祝いの言葉とかえさせていただきます。",
-		   NULL, " however, allow me to say the following to celebrate the 25th anniversary of our founding.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Laissez-moi donc conclure ainsi ces vœux de prospérité en ce 25ème anniversaire de la présente assemblée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　××会長さん＠並びに××会の皆さん＠本日は本当におめでとうございました＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　××会長さん、",
-		   NULL, "Chairman XX,", Line_WaitForInput);
+		   NULL, "M. le Directeur,", Line_WaitForInput);
 	OutputLine(NULL, "並びに××会の皆さん。",
-		   NULL, " members of the XX Party in attendance,", Line_WaitForInput);
+		   NULL, " mesdames et messieurs les membres,", Line_WaitForInput);
 	OutputLine(NULL, "本日は本当におめでとうございました。",
-		   NULL, " thank you very much for today.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " encore une fois, toutes mes félicitations.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -245,7 +245,7 @@ void main()
 //　××県議連、議員勉強会××会発足二十五周年記念祝賀会での、建設大臣の来賓挨拶より￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　××県議連、議員勉強会××会発足二十五周年記念祝賀会での、建設大臣の来賓挨拶より。",
-		   NULL, "--From the opening remarks of the XX Party Prefectural Forum and 25th Anniversary Celebration.", Line_Normal);
+		   NULL, "(Transcript du discours du ministre du développement urbain lors de la réception pour les 25 ans de la fondation *******)", Line_Normal);
 	ClearMessage();
 
 
