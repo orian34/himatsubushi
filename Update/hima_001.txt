@@ -1185,7 +1185,7 @@
 //　君に私が、初めてプロポーズをした場所だよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　君に私が、初めてプロポーズをした場所だよ。",
-		   NULL, "— C'est l'endroit où je t'ai demandé ta main en mariage, la première fois.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est l'endroit où je t'ai demandé ta main en mariage, la première fois.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1769,7 +1769,7 @@
 //　……やがて室内は、爽やかな朝の空気を完全に失い、無機質な蛍光灯の灯だけになった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……やがて室内は、爽やかな朝の空気を完全に失い、無機質な蛍光灯の灯だけになった。",
-		   NULL, "Bientôt, le matin se fit absent ; au lieu de cela, la lumière des néons nous inonda d'une lumière artificielle.", Line_Normal);
+		   NULL, "Bientôt, le matin se fit absent ; au lieu de cela, la lumière des néons nous inonda d'une lumière artificielle.", Line_Normal);
 	ClearMessage();
 
 
@@ -1871,7 +1871,7 @@
 //　事件が起こる前に対処することもまた、我々公安部の仕事なのを理解してほしい￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　事件が起こる前に対処することもまた、我々公安部の仕事なのを理解してほしい。",
-		   NULL, "Et puis, c'était notre travail, à la DST, de faire en sorte de régler les problèmes qui pourraient devenir encombrant pour le gouvernement.", Line_Normal);
+		   NULL, "Et puis, c'était notre travail, à la DST, de faire en sorte de régler les problèmes qui pourraient devenir encombrants pour le gouvernement.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1991,10 +1991,10 @@
 //　…その後のドミノ連鎖は割愛するが、最終的に内閣支持率低下＠解散総選挙＠共産勢力の拡大を許す結果となりかねない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…その後のドミノ連鎖は割愛するが、最終的に内閣支持率低下、",
-		   NULL, "Je vous épargne la liste des têtes qui tomberont par effet de dominos, mais ça faisait un paquet de monde. Cela aurait sûrement amené à une dissolution forcée du cabinet du Japon,", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je vous épargne la liste des têtes qui tomberont par effet de dominos, mais ça faisait un paquet de monde. Cela aurait sûrement amené à une dissolution forcée du cabinet du Japon, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "解散総選挙、",
-		   NULL, "de la Diète, ", Line_WaitForInput);
+		   NULL, "de la Diète,", Line_WaitForInput);
 	OutputLine(NULL, "共産勢力の拡大を許す結果となりかねない。",
 		   NULL, " et permis un retour en force du Parti Communiste.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -2289,7 +2289,7 @@
 //　雛見沢ダム開発計画に反対する地域の住民団体だ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢ダム開発計画に反対する地域の住民団体だ。",
-		   NULL, "C'est groupe de civils qui sont contre la construction du barrage à Hinamizawa.", Line_Normal);
+		   NULL, "C'est un groupe de civils qui sont contre la construction du barrage à Hinamizawa.", Line_Normal);
 	ClearMessage();
 
 
@@ -2326,7 +2326,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s05/13/vx_akasaka_0001", 256, TRUE);
 	OutputLine(NULL, "（これがそもそも、今回、この団体を調査することになった所以だ）",
-		   NULL, "(C'est d'ailleurs la seule raison pour laquelle ils sont tombés dans notre liste de suspects)", Line_Normal);
+		   NULL, "(C'est d'ailleurs la seule raison pour laquelle ils sont tombés dans notre liste de suspects.)", Line_Normal);
 	ClearMessage();
 
 
@@ -2436,7 +2436,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Chef</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/104300001", 256, TRUE);
 	OutputLine(NULL, "「えぇ、地元ではかなり賑わせているようです。」",
-		   NULL, "Ah oui, ils sont pas mous du genou, ceux-là.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Ah oui, ils sont pas mous du genou, ceux-là.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4912,7 +4912,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300080", 256, TRUE);
 	OutputLine(NULL, "「不法投棄？",
-		   NULL, "— Des décharges sauvages  ?", Line_WaitForInput);
+		   NULL, "— Des décharges sauvages ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300081", 256, TRUE);
 	OutputLine(NULL, "　産廃を勝手に捨てようとする悪徳業者のことですか…？」",
 		   NULL, " Il y aurait des camions qui viennent bazarder leurs déchets industriels par ici ?", GetGlobalFlag(GLinemodeSp));
@@ -6599,7 +6599,7 @@
 //　周囲の人たちに恐れられている、雛見沢村＠……県警公安で聞いた情報のひとつを思い出す￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　周囲の人たちに恐れられている、雛見沢村。",
-		   NULL, "Tous les gens des villlages alentour en ont donc peur.", Line_WaitForInput);
+		   NULL, "Tous les gens des villages alentour en ont donc peur.", Line_WaitForInput);
 	OutputLine(NULL, "……県警公安で聞いた情報のひとつを思い出す。",
 		   NULL, " Cela me rappelait certains éléments du dossier de la DST.", Line_Normal);
 	ClearMessage();
