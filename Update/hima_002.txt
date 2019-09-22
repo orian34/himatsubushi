@@ -476,7 +476,7 @@
 //　…廃線間近だと教えられたバスは、とてもそんな風には見えなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…廃線間近だと教えられたバスは、とてもそんな風には見えなかった。",
-		   NULL, "Le bus dans lequel je montai ne laissait en rien deviner l'arrêt prochaine de la ligne.", Line_Normal);
+		   NULL, "Le bus dans lequel je montai ne laissait en rien deviner l'arrêt prochain de la ligne.", Line_Normal);
 	ClearMessage();
 
 
@@ -803,21 +803,21 @@
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………丸ごと見透かしたような目で、",
-		   NULL, " comme si mon déguisement n'avait trompé absolument personne.", Line_ContinueAfterTyping);
+		   NULL, " comme si", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…………ただじっと、",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " mon déguisement n'avait trompé", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…見下ろしていた。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " absolument personne.", Line_Normal);
 	ClearMessage();
 
 
@@ -1731,7 +1731,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 27, "ps3/s05/27/100500013", 256, TRUE);
 	OutputLine(NULL, "「……富竹２号なのです。」",
-		   NULL, "— Ouah, Tomitake n°  2 !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Ouah, Tomitake n°2 !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2590,10 +2590,8 @@
 
 //　大石氏ですら、容易には踏み込めない…古手神社＠鬼ヶ淵死守同盟の本拠地＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　大石氏ですら、容易には踏み込めない…古手神社。",
-		   NULL, "Même lui ne pouvait pas y entrer facilement.", Line_WaitForInput);
-	OutputLine(NULL, "鬼ヶ淵死守同盟の本拠地。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　大石氏ですら、容易には踏み込めない…古手神社。鬼ヶ淵死守同盟の本拠地。",
+		   NULL, "Même lui ne pouvait pas y entrer facilement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
