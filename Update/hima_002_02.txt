@@ -647,10 +647,8 @@
 
 //　どんなのを想像していたのか、と言われれば…＠恥ずかしい話だが、もっと物騒な様子を思い描いていた＠……鉄条網とか、有刺鉄線のバリケードとか…￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　どんなのを想像していたのか、と言われれば…。",
+	OutputLine(NULL, "　どんなのを想像していたのか、と言われれば…。恥ずかしい話だが、もっと物騒な様子を思い描いていた。",
 		   NULL, "Je m'était imaginé quelque chose de plus moche,", Line_WaitForInput);
-	OutputLine(NULL, "恥ずかしい話だが、もっと物騒な様子を思い描いていた。",
-		   NULL, " A REMOVE", Line_WaitForInput);
 	OutputLine(NULL, "……鉄条網とか、有刺鉄線のバリケードとか…。",
 		   NULL, " avec des grillages, des barbelés, je ne sais pas...", Line_Normal);
 	ClearMessage();
@@ -2075,7 +2073,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300238", 256, TRUE);
 	OutputLine(NULL, "「え、………………あ、…………………………。」",
-		   NULL, "— Hein _? ... Ah... Eeeeh !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Hein ? ... Ah... Eeeeh !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
