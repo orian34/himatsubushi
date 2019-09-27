@@ -3227,7 +3227,7 @@
 	OutputLine(NULL, "　……なーんて、欲を掻いちゃいけませんね。",
 		   NULL, "Quoique, il vaut mieux ne pas être trop gourmand...", Line_WaitForInput);
 	OutputLine(NULL, "んっふっふ！",
-		   NULL, " Éhhé !", Line_Normal);
+		   NULL, " Éhhé !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -5370,7 +5370,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>佐藤</color>", NULL, "<color=#f5e6d3>Sato</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/104400076", 256, TRUE);
 	OutputLine(NULL, "…大石の旦那は怖いもの知らずだけどな、あれでも２〜３回は襲われてる。",
-		   NULL, "Ôishi a peur de rien, mais il s'est déjà fait attaqué une paire de fois.", Line_WaitForInput);
+		   NULL, "Ôishi a peur de rien, mais il s'est déjà fait attaquer une paire de fois.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/104400077", 256, TRUE);
 	OutputLine(NULL, "最近は着てないけど、一時は、オフの時も防刃ベストを着込んでたんだよな。」",
 		   NULL, " En ce moment, il ne le met plus, mais avant, il portait son gilet pare-balles même après le service.", GetGlobalFlag(GLinemodeSp));
