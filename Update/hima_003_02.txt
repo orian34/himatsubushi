@@ -196,7 +196,7 @@
 //　この村の深部、御三家の情報収集力は、血縁や地縁によって信じ難いくらいに固められており＠雛見沢界隈は愚か、その情報網は鹿骨市全体にまで広がっていると＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この村の深部、御三家の情報収集力は、血縁や地縁によって信じ難いくらいに固められており、",
-		   NULL, "Leur réseau d'informateur est basé sur les liens de la famille et des relations business. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Leur réseau d'informateurs est basé sur les liens de la famille et des relations business. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "雛見沢界隈は愚か、その情報網は鹿骨市全体にまで広がっていると。",
 		   NULL, "Il s'étend sur tout le district de Shishibone, avec une efficacité redoutable.", GetGlobalFlag(GLinemodeSp));
@@ -293,7 +293,7 @@
 //　大石氏と一緒にいるからドライブをしていられるのであって＠………自分がこの車を下車して自動販売機でも探しに出掛けたなら、……帰ってこられない可能性だってあるのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石氏と一緒にいるからドライブをしていられるのであって、",
-		   NULL, "Ils sont justes là pour que les choses s'enlisent...", Line_WaitForInput);
+		   NULL, "Ils sont juste là pour que les choses s'enlisent...", Line_WaitForInput);
 	OutputLine(NULL, "………自分がこの車を下車して自動販売機でも探しに出掛けたなら、……帰ってこられない可能性だってあるのだ。",
 		   NULL, " Je suis uniquement ici parce que c'est l'inspecteur qui conduit, en fait. Si je sors de cette voiture pour acheter une boisson à un distributeur, il y a des chances pour que je n'en revienne pas vivant...", Line_Normal);
 	ClearMessage();
