@@ -110,7 +110,7 @@ void dialog009()
 {
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700266", 256, TRUE);
 	OutputLine(NULL, "　私はもちろん馴染みの店をハシゴしまくりですよ？",
-		   NULL, " le bar avec les filles en justaucorps et en costumes domestiques ? ", Line_WaitForInput);
+		   NULL, " le bar avec les filles en justaucorps et en costumes de domestiques ? ", Line_WaitForInput);
 }
 
 void dialog010()
