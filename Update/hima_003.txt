@@ -1378,7 +1378,7 @@
 //　人質を別の場所へ隠してしまうはずだ＠一刻の猶予もない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　人質を別の場所へ隠してしまうはずだ。",
-		   NULL, "ils vont sûrement tenter de placer l'enfant ailleurs.", Line_WaitForInput);
+		   NULL, "Ils vont sûrement tenter de placer l'enfant ailleurs.", Line_WaitForInput);
 	OutputLine(NULL, "一刻の猶予もない。",
 		   NULL, " Nous n'avons pas une seconde à perdre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1467,7 +1467,7 @@
 //　週に２回訪れてくれる家庭教師の賜物だ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　週に２回訪れてくれる家庭教師の賜物だ。",
-		   NULL, "Il était la grande fierté de son professeur de soutient, qui lui donnait des cours deux fois par semaine.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il était la grande fierté de son professeur de soutien, qui lui donnait des cours deux fois par semaine.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1771,15 +1771,8 @@
 
 //　…そう、彼は脅迫されて苦境に立たされている祖父のために何かをしたかった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…そう、彼は脅迫されて苦境に立たされている祖父のために何かをしたかった。",
-		   NULL, "Alors il se mit à réfléchir à ce qu'il pourrait faire pour sortir son grand-père de ce mauvais pas.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//　自分がここに囚われていることで、祖父に対して苦しみを与えていることが何よりも許せなく、そして悔しかった￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　自分がここに囚われていることで、祖父に対して苦しみを与えていることが何よりも許せなく、そして悔しかった。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　…そう、彼は脅迫されて苦境に立たされている祖父のために何かをしたかった。　自分がここに囚われていることで、祖父に対して苦しみを与えていることが何よりも許せなく、そして悔しかった。",
+		   NULL, "Alors il se mit à réfléchir à ce qu'il pourrait faire pour sortir son grand-père de ce mauvais pas.", Line_Normal);
 	ClearMessage();
 
 
@@ -2167,7 +2160,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>誘拐犯</color>", NULL, "<color=#f5e6d3>Ravisseur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s05/14/104700019", 256, TRUE);
 	OutputLine(NULL, "「どったんね、坊主。",
-		   NULL, "Bon quéssiya, gamin,", Line_WaitForInput);
+		   NULL, "— Bon quéssiya, gamin,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 14, "ps3/s05/14/104700020", 256, TRUE);
 	OutputLine(NULL, "腹ぁん痛むんかい？」",
 		   NULL, " t'as mal au ventre ?", GetGlobalFlag(GLinemodeSp));
@@ -2428,7 +2421,7 @@
 		   NULL, " T'es sûr ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 49, "ps3/s05/49/vt2_13hibari1041", 256, TRUE);
 	OutputLine(NULL, "　大丈夫か？」",
-		   NULL, " Ca va le faire ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ça va le faire ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2733,7 +2726,7 @@
 //　犯人のひとりが、凄むように言った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　犯人のひとりが、凄むように言った。",
-		   NULL, "L'un des ravisseurs finit pas lui parler en le menaçant.", Line_Normal);
+		   NULL, "L'un des ravisseurs finit par lui parler en le menaçant.", Line_Normal);
 	ClearMessage();
 
 
