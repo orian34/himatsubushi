@@ -32,7 +32,7 @@
 //　地球の裏側で名前も知らない誰かが泣いたって笑ったって、自分に何の影響も及ぼさないことなんて、誰もが当然のように理解している＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　地球の裏側で名前も知らない誰かが泣いたって笑ったって、自分に何の影響も及ぼさないことなんて、誰もが当然のように理解している。",
-		   NULL, "Lorsque quelqu'un de parfaitement inconnu, situé de l'autre côté de planète, rigole ou pleure, cela n'a aucune influence sur votre vie. Tout le monde en est conscient.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Lorsque quelqu'un de parfaitement inconnu, situé de l'autre côté de la planète, rigole ou pleure, cela n'a aucune influence sur votre vie. Tout le monde en est conscient.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -351,7 +351,7 @@
 //　……そういったことが、何も川を隔てなくても世の中にはたくさんあるってこと＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そういったことが、何も川を隔てなくても世の中にはたくさんあるってこと。",
-		   NULL, "Et ce genre de choses existent en ce bas-monde, partout, la séparation entre les gens n'est pas forcément physique ou géographique.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et ce genre de choses existe en ce bas-monde, partout, la séparation entre les gens n'est pas forcément physique ou géographique.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
