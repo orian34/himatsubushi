@@ -1429,7 +1429,7 @@
 		   NULL, " Maintenant que vous êtes tous en mon pouvoir,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600158", 256, TRUE);
 	OutputLine(NULL, "　これからはお疲れ様会もシナリオも！",
-		   NULL, " je vais enfin être le centre d'intérêt de tous les scénarii", Line_WaitForInput);
+		   NULL, " je vais enfin être le centre d'intérêt de tous les scénarios", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600159", 256, TRUE);
 	OutputLine(NULL, "　全て私の思うままに進めさせてもらいますね。",
 		   NULL, " et de tous les petits extras...", Line_WaitForInput);
@@ -1530,7 +1530,7 @@
 		   NULL, " Ne fais pas l'idiote, tu sais bien que ça ne sert à rien.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600164", 256, TRUE);
 	OutputLine(NULL, "私をあんまり怒らせると、あなただけでなく、お姉たちの処遇も変わってくることになりますよ？」",
-		   NULL, " Si tu m'énerves, la seule chose qui va se passer, c'est que ta punition et celle de ma sœur seront encore pires que ce que j'avais prévues.", Line_Normal);
+		   NULL, " Si tu m'énerves, la seule chose qui va se passer, c'est que ta punition et celle de ma sœur seront encore pires que ce que j'avais prévu.", Line_Normal);
 	ClearMessage();
 
 //＜詩音
@@ -1621,7 +1621,7 @@
 		   NULL, "— Tu ne comprends rien à rien, on dirait.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200328", 256, TRUE);
 	OutputLine(NULL, "…例えお疲れ様会だけと言えども出演し、過去のシナリオにもあれだけ登場しておいてこの狼藉。",
-		   NULL, " Comment peux-tu te permettre de te comporter ainsi, alors que tu as eu tellement de scènes dans les autres scénarii ? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Comment peux-tu te permettre de te comporter ainsi, alors que tu as eu tellement de scènes dans les autres scénarios ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200329", 256, TRUE);
 	OutputLine(NULL, "……そんな詩ぃちゃんをね、",
