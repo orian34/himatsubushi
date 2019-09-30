@@ -1570,7 +1570,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300596", 256, TRUE);
 	OutputLine(NULL, "「あの、…この電話が壊れてるみたいなんで、別の公衆電話があるところを教えてもらいたいのですが……。」",
-		   NULL, "— Votre téléphone a l'air en panne, vous pourriez  m'indiquer où est la prochaine cabine publique ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Votre téléphone a l'air en panne, vous pourriez m'indiquer où est la prochaine cabine publique ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
