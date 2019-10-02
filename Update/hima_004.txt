@@ -166,7 +166,7 @@
 		   NULL, "— Bien sûr.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 34, "ps3/s05/34/321500027", 256, TRUE);
 	OutputLine(NULL, "えへへっ〜」",
-		   NULL, " Éhéhé~", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Éhéhé~", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //　rおかげでようやくまどろみから覚めた私は、通路側の席から身を乗り出して窓の外を見る。
@@ -420,7 +420,7 @@
 		   NULL, " J'ai 7 ans.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 34, "ps3/s05/34/321500033", 256, TRUE);
 	OutputLine(NULL, "こ、…こんにちは、です」",
-		   NULL, " E-Enchanté.", Line_Normal);
+		   NULL, " E-Enchantée.", Line_Normal);
 	ClearMessage();
 
 //  大石rvs05/11/321100005.「うんうん、いいお返事です。kvs05/11/321100006.さすがは、赤坂さんの娘さんですよ…なっはっはっはっ」
@@ -4098,7 +4098,7 @@
 //　r彼女が私の娘の身体を借りて、私に慰めの言葉をかけてくる…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "彼女が私の娘の身体を借りて、私に慰めの言葉をかけてくる…。",
-		   NULL, "Elle avait empruntée le corps de ma fille pour me réconforter…", Line_Normal);
+		   NULL, "Elle avait emprunté le corps de ma fille pour me réconforter…", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -4141,7 +4141,7 @@
 //　r私のあやまちを責めるのではなく、むしろ気遣うように…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "私のあやまちを責めるのではなく、むしろ気遣うように…。",
-		   NULL, "Plutôt que de m'accabler pour mes erreurs, elle", Line_Normal);
+		   NULL, "Plutôt que de m'accabler pour mes erreurs, elle était compatissante.", Line_Normal);
 	ClearMessage();
 
 //  赤坂r-vs05/13/321000044.（…ああ、泣くものか。kvs05/13/321000045.泣くよりもまず、私にはやるべきことがある！！）
@@ -4227,7 +4227,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>Miyuki</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 34, "ps3/s05/34/321500043", 256, TRUE);
 	OutputLine(NULL, "「えへへ…楽しみだなぁ！",
-		   NULL, "— Éhhéhé… Je suis impatiente !", Line_WaitForInput);
+		   NULL, "— Éhhéhé… Je suis impatiente !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 34, "ps3/s05/34/321500044", 256, TRUE);
 	OutputLine(NULL, "　今度、美雪も連れて行ってね！",
 		   NULL, " La prochaine, emmène moi avec toi !", Line_WaitForInput);
@@ -4285,7 +4285,7 @@
 	OutputLine(NULL, "あの夏の",
 		   NULL, "Cet été,", Line_WaitForInput);
 	OutputLine(NULL, "　ひぐらしのなく",
-		   NULL, " les pleurs des cigales ont résonnés…", Line_WaitForInput);
+		   NULL, " les pleurs des cigales ont résonné…", Line_WaitForInput);
 	OutputLine(NULL, "　雛見沢でー。",
 		   NULL, " dans tout Hinamizawa…", Line_Normal);
 	ClearMessage();
