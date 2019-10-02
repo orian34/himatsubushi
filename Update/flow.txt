@@ -1,4 +1,4 @@
-
+﻿
 void main()
 {
 	SetValidityOfSaving( FALSE );
@@ -127,7 +127,7 @@ void Day1()
 	GetAchievement("HIGURASHI_STORY_EP04_01");
 
 	StoreValueToLocalWork( ChapterNumber, 1 );
-	SavePoint("Ch.1 終わり", "End of Chapter 1");
+	SavePoint("Ch.1 終わり", "Fin du chapitre 1");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
 
@@ -148,7 +148,7 @@ void Day2_2()
 	GetAchievement("HIGURASHI_STORY_EP04_02");
 
 	StoreValueToLocalWork( ChapterNumber, 2 );
-	SavePoint("Ch.2 終わり", "End of Chapter 2");
+	SavePoint("Ch.2 終わり", "Fin du chapitre 2");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
 
@@ -162,7 +162,7 @@ void Day2_3()
 	GetAchievement("HIGURASHI_STORY_EP04_03");
 
 	StoreValueToLocalWork( ChapterNumber, 3 );
-	SavePoint("Ch.3 終わり", "End of Chapter 3");
+	SavePoint("Ch.3 終わり", "Fin du chapitre 3");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
 
@@ -190,7 +190,7 @@ void Day3_3()
 	GetAchievement("HIGURASHI_STORY_EP04_04");
 
 	StoreValueToLocalWork( ChapterNumber, 4 );
-	SavePoint("Ch.4 終わり", "End of Chapter 4");
+	SavePoint("Ch.4 終わり", "Fin du chapitre 4");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
 
@@ -211,7 +211,7 @@ void Day3_5()
 	GetAchievement("HIGURASHI_STORY_EP04_05");
 
 	StoreValueToLocalWork( ChapterNumber, 5 );
-	SavePoint("Ch.5 終わり", "End of Chapter 5");
+	SavePoint("Ch.5 終わり", "Fin du chapitre 5");
 	CallSection( "SetDay" );
 	CallSection( "ViewTips" );
 
