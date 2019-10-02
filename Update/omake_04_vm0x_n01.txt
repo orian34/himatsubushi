@@ -26,7 +26,7 @@ void dialog001()
 		   NULL, "— Ah, je le savais !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300430", 256, TRUE);
 	OutputLine(NULL, "　なにげに主役張ったシナリオまであるのにこの狼藉！",
-		   NULL, " Tu te permets de venir nous narguer, alors qu'en plus tu seras le personnage principal du prochain tome ? Mais tu te fous de ma gueule, ma parole ?", Line_WaitForInput);
+		   NULL, " Tu te permets de venir nous narguer, alors qu'en plus tu seras le personnage principal du prochain tome ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300431", 256, TRUE);
 	OutputLine(NULL, "　あんた、やってくれるじゃないのぉおおぉ！！」",
 		   NULL, " Mais tu te fous de ma gueule, ma parole ?", Line_Normal);
@@ -52,7 +52,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900150", 256, TRUE);
 	OutputLine(NULL, "「…それは何の真似？",
-		   NULL, "— Et que comptes-tu faire  ?", Line_WaitForInput);
+		   NULL, "— Et que comptes-tu faire ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900151", 256, TRUE);
 	OutputLine(NULL, "　……目明し編の台本？",
 		   NULL, " … Le script du prochain jeu ?", Line_WaitForInput);
@@ -113,25 +113,25 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100222", 256, TRUE);
 	OutputLine(NULL, "「くっくっくっ……。",
-		   NULL, "Héhhéhhé !", Line_WaitForInput);
+		   NULL, "— Héhhéhhé !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100223", 256, TRUE);
 	OutputLine(NULL, "　そうさ、今まではそうだった。」",
-		   NULL, " Tu as raison, j'en sors juste.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tu as raison, j'en sors tout juste.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100224", 256, TRUE);
 	OutputLine(NULL, "「収録居残りのたびに、「残りワード数で誰かを抜けば、お疲れさま会に参加してもいいよ」と言われ続けて。」",
-		   NULL, "— À chaque fois c'est la même, on me dis : “tu pourras aller à la fête si tu bats quelqu'un sur le nombre de lignes restantes”.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— À chaque fois c'est la même, on me dit : “Tu pourras aller à la fête si tu bats quelqu'un sur le nombre de lignes restantes”.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100225", 256, TRUE);
 	OutputLine(NULL, "「それでも他のキャラと比べても二倍、あるいは三倍以上もある分量をこなすなど不可能、",
-		   NULL, "— Mais j'ai toujours le double, voir le triple, de dialogues à doubler comparés aux autres personnages. C'est juste impossible, en fait !", Line_WaitForInput);
+		   NULL, "— Mais j'ai toujours le double, voir le triple, de dialogues à doubler comparé aux autres personnages. C'est juste impossible, en fait !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100226", 256, TRUE);
 	OutputLine(NULL, "というか最初から参加させる気ないだろ音響監督さんよぉぉっ！",
-		   NULL, " C'est comme si l'ingénieur du son avait prévu de m'en empêcher depuis le début !!", Line_WaitForInput);
+		   NULL, " C'est comme si l'ingénieur du son avait prévu de m'en empêcher depuis le début !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100227", 256, TRUE);
 	OutputLine(NULL, "　と思って諦めてきたが……。」",
 		   NULL, " Enfin, c'est ce que je pensais…", GetGlobalFlag(GLinemodeSp));
@@ -140,7 +140,7 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100228", 256, TRUE);
 	OutputLine(NULL, "「ついに俺は抜いた！　あるキャラを！！",
-		   NULL, "— Mais finalement, quelqu'un ma dépassé ! Un certain personnage !", Line_WaitForInput);
+		   NULL, "— Mais finalement, quelqu'un m'a dépassé ! Un certain personnage !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100229", 256, TRUE);
 	OutputLine(NULL, "　詩音、これを見やがれぇぇえぇっっ！！」",
 		   NULL, " Shion, admire moi ça !!", Line_Normal);
@@ -157,7 +157,7 @@ void dialog005()
 		   NULL, "— Oui.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100231", 256, TRUE);
 	OutputLine(NULL, "　主役として登場パターンが増えた詩音は、当然喋るワード数もこれまでの二倍！",
-		   NULL, " Vu que Shion est le personnage principal, elle apparait dans plus de scènes, elle a donc deux fois plus de lignes que d'habitudes !", Line_WaitForInput);
+		   NULL, " Vu que Shion est le personnage principal, elle apparait dans plus de scènes, elle a donc deux fois plus de lignes que d'habitude !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100232", 256, TRUE);
 	OutputLine(NULL, "　しかも魅音とキャストが同じだからさらに二倍！」",
 		   NULL, " De plus, Shion et Mion ont toutes les deux la même comédienne de doublage, ça double encore la mise !", GetGlobalFlag(GLinemodeSp));
@@ -177,7 +177,7 @@ void dialog005()
 		   NULL, "— C'est-c'est pas vrai ?!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600177", 256, TRUE);
 	OutputLine(NULL, "　私、次の「目明し」でこんなに喋るんですかぁぁあっ？！」",
-		   NULL, " Je vais tant de choses à dire ?!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je vais avoir tant de choses à dire ?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -186,7 +186,7 @@ void dialog005()
 		   NULL, "— Voyons voir… Kei en a environ 500,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300450", 256, TRUE);
 	OutputLine(NULL, "詩音は…………２７００越えぇぇっ？！",
-		   NULL, "— Et Shion en a… plus de 2700 ?!", Line_WaitForInput);
+		   NULL, " Et Shion en a… plus de 2700 ?!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300451", 256, TRUE);
 	OutputLine(NULL, "　これ、普通のアドベンチャーゲームなら全キャラの総合計数だよっ！！」",
 		 NULL, " C'est genre, le cumul de tous les personnages d'un jeu d'aventure classique !", Line_Normal);
@@ -197,7 +197,7 @@ void dialog005()
 		   NULL, "— On ajoute les lignes de Mion,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/05/440500162", 256, TRUE);
 	OutputLine(NULL, "その数やなんと、」",
-		   NULL, " ca fait donc un total de-", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ça fait donc un total de-", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音＆詩音</color>", NULL, "<color=#5ec69a>Mion & Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -233,10 +233,10 @@ void dialog006()
 		   NULL, " Et puis ? Qu'est-ce que tu veux que ça me foute ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600172", 256, TRUE);
 	OutputLine(NULL, "　そのいまだに収録居残り中の圭ちゃんがどうやってここへ現れると？",
-		   NULL, " Comment il va faire pour venir alors qu'il est toujours au sudio pour enregistrer ses dialogues ?", Line_WaitForInput);
+		   NULL, " Comment il va faire pour venir alors qu'il est toujours au studio pour enregistrer ses dialogues ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600173", 256, TRUE);
 	OutputLine(NULL, "　……まさか、圭ちゃんを私たちの誰かが追い抜いたわけでもあるまいに。",
-		   NULL, " … C'est pas comme", Line_WaitForInput);
+		   NULL, " … C'est pas comme si quelqu'un d'autre ici pouvait avoir plus de lignes à faire que lui.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600174", 256, TRUE);
 	OutputLine(NULL, "くっくっく…！！」",
 		   NULL, " Héhhéhhé !", GetGlobalFlag(GLinemodeSp));
@@ -275,14 +275,14 @@ void dialog009()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400266", 256, TRUE);
 	OutputLine(NULL, "「……今まで参加できなかった分、盛大に弾け飛んでいますわね。」",
-		   NULL, "— Il a complètement déraillé. La frustration de ne pas pouvoir participer aux fêtes c'est accumulée au fur et à mesure et maintenant qu'il peut enfin participer il n'est plus capable de la contenir.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Il a complètement déraillé. La frustration de ne pas pouvoir participer aux fêtes s'est accumulée au fur et à mesure et maintenant qu'il peut enfin participer il n'est plus capable de la contenir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500163", 256, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「受験勉強で抑圧されていた人が、大学生になった途端堕落するパターンと同じなのですよ。」",
-		   NULL, "— C'est comme si un étudiant qui avait refoulé son stress des concours d'entrée dans à l'Université était devenu totalement fou au moment d'y entrer.", Line_Normal);
+		   NULL, "— C'est comme si un étudiant qui avait refoulé son stress des concours d'entrée à l'Université était devenu totalement fou au moment d'y entrer.", Line_Normal);
 	ClearMessage();
 }
 
@@ -499,7 +499,7 @@ void dialog016()
 		   NULL, "Tr-Trop rapide !!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100285", 256, TRUE);
 	OutputLine(NULL, "　あんた、その動きは絶対人間やめてるだろっ！！！",
-		   NULL, " Ces mouvements, vous avez rejeté votre humanité, dirlo !!!", Line_WaitForInput);
+		   NULL, " Ces mouvements, vous avez rejeté votre humanité !!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100286", 256, TRUE);
 	OutputLine(NULL, "　ぎゃぎゃぎゃああぁああぁああ！！！！」",
 		   NULL, " Aïe, ouille, nan mais aïe, aaaaAAAAAHHH !", Line_Normal);
