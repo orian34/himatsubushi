@@ -588,7 +588,7 @@ void main()
 //　バス内に掲示された廃線告知をぼんやりと眺めながら、私は指定された停留所まであといくつあるかを数えていた……￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　バス内に掲示された廃線告知をぼんやりと眺めながら、私は指定された停留所まであといくつあるかを数えていた……。",
-		   NULL, "Regardant l'annonce de la compagnie de transport d'un œil morne, je m'affairais à compter et recompter le nombre de stations restantes.\", Line_Normal);
+		   NULL, "Regardant l'annonce de la compagnie de transport d'un œil morne, je m'affairais à compter et recompter le nombre de stations restantes.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
