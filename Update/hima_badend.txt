@@ -30,7 +30,7 @@ void main()
 //赤坂r「………」
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………」",
-			NULL, "\".........\"", Line_Normal);
+			NULL, ".........", Line_Normal);
 	ClearMessage();
 
 //rわずかに、拳銃を構える男の目に躊躇いが見える。
@@ -55,17 +55,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s05/13/vt2_akasaka1001", 256, TRUE);
 	OutputLine(NULL, "「うおぉぉおぉっっ！！！」",
-			NULL, "\"Raaaaahhhhhh!!!\"", Line_Normal);
+			NULL, "— Raaaaahhhhhh!!!", Line_Normal);
 	ClearMessage();
 
 //誘拐犯rvS05/14/VT2_okonogi1001.「なっ？！kvS05/14/VT2_okonogi1002.　っち、こんダラズがぁぁッ！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>誘拐犯</color>", NULL, "<color=#f5e6d3>Kidnapper</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s05/14/vt2_okonogi1001", 256, TRUE);
 	OutputLine(NULL, "「なっ？！",
-			NULL, "\"Hein ?!", Line_WaitForInput);
+			NULL, "— Hein ?!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 14, "ps3/s05/14/vt2_okonogi1002", 256, TRUE);
 	OutputLine(NULL, "　っち、こんダラズがぁぁッ！！」",
-			NULL, " Tain, 'spèce de salaud !\"", Line_Normal);
+			NULL, " Tain, 'spèce de salaud !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -79,7 +79,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s05/13/vt2_akasaka1002", 256, TRUE);
 	OutputLine(NULL, "「………」",
-			NULL, "\".........\"", Line_Normal);
+			NULL, "— .........", Line_Normal);
 	ClearMessage();
 
 //r突然。
