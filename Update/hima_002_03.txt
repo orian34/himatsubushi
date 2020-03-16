@@ -131,7 +131,7 @@ void main()
 
 
 //「赤坂くん＠　嘉納です＠お疲れさま＠定時連絡がなかったので、こちらから掛けました＠そちらの状況はどう？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10014", 256, TRUE);
 	OutputLine(NULL, "「赤坂くん？",
 		   NULL, "— Oui, Akasaka ?", Line_WaitForInput);
@@ -173,7 +173,7 @@ void main()
 
 
 //「そう＠なかなか手際がいいね＠赤坂くんのどこか初々しい感じが、むしろ武器になったかもしれないね＠まずは上首尾ってところかな？￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10019", 256, TRUE);
 	OutputLine(NULL, "「そう。",
 		   NULL, "— Je vois.", Line_WaitForInput);
@@ -201,7 +201,7 @@ void main()
 
 
 //「県警での情報や、地元警察の公安での情報と照らしてどう＠　鬼ヶ淵死守同盟はシロっぽい？￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10023", 256, TRUE);
 	OutputLine(NULL, "「県警での情報や、地元警察の公安での情報と照らしてどう？",
 		   NULL, "— Et les infos des policiers du coin, ça donne quoi ?", Line_WaitForInput);
@@ -248,7 +248,7 @@ void main()
 
 
 //「そう＠なるべく早めにね＠わかってると思うけど、今夜が終われば、誘拐から丸４日が経過する＠……いつが時間切れという明白な区切りはないけれど、時間の経過は確実に我々の状況を不利にしていく＠…それはわかってるよね。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10025", 256, TRUE);
 	OutputLine(NULL, "「そう。",
 		   NULL, "— Mouais.", Line_WaitForInput);
@@ -258,7 +258,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10027", 256, TRUE);
 	OutputLine(NULL, "わかってると思うけど、今夜が終われば、誘拐から丸４日が経過する。",
 		   NULL, " Je ne sais pas si tu as compté, mais ce soir, cela fera 4 jours que l'enlèvement a eu lieu. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10028", 256, TRUE);
 	OutputLine(NULL, "……いつが時間切れという明白な区切りはないけど、時間の経過は確実に我々の状況を不利にしていく。",
 		   NULL, "Nous ne savons pas quand est-ce qu'il sera trop tard, alors il nous faut faire vite. Le temps ne joue pas en notre faveur…", Line_WaitForInput);
@@ -283,7 +283,7 @@ void main()
 
 
 //「うん＠くれぐれも気をつけてね＠相手は暴力主義団体なんだから＠…油断すれば危険もありえるからね＠危険が迫ったらすぐに連絡を＠その場合は地元公安に応援体制を入れられるようにするからね。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10030", 256, TRUE);
 	OutputLine(NULL, "「うん。",
 		   NULL, "— Merci.", Line_WaitForInput);
@@ -299,7 +299,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10034", 256, TRUE);
 	OutputLine(NULL, "危険が迫ったらすぐに連絡を。",
 		   NULL, " Appelle-nous s'il y a du grabuge. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10035", 256, TRUE);
 	OutputLine(NULL, "その場合は地元公安に応援体制を入れられるようにするからね。」",
 		   NULL, "Je dirais aux autres à Gogura de rester en alerte pour te sortir de là.", GetGlobalFlag(GLinemodeSp));
@@ -318,7 +318,7 @@ void main()
 
 
 //「…他に赤坂くんの方から連絡はある？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10047", 256, TRUE);
 	OutputLine(NULL, "「…他に赤坂くんの方から連絡はある？」",
 		   NULL, "— Il n'y a rien d'autre que tu voudrais nous faire passer comme message ?", GetGlobalFlag(GLinemodeSp));
@@ -341,7 +341,7 @@ void main()
 
 //「うん＠こっちもみんな頑張ってるけど、なかなかはかどらないよ＠何しろ、調べる団体が星の数だからね＠
 //　だから君の方の団体も、シロだとわかったらすぐに帰京して他の職員の応援に入ってもらいたいんだよ＠……室長は鬼ヶ淵も洗っとけって言ってるけど、俺は鬼ヶ淵なんかの反ダム住民団体なんかは、今回の件、まったく無縁だと思ってるからね＠…職員ひとりを、ひと団体調べさせるためだけに出張させるのは、すごく痛いよホント。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10048", 256, TRUE);
 	OutputLine(NULL, "「うん。",
 		   NULL, "— Mouais, bof.", Line_WaitForInput);
@@ -351,15 +351,15 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10050", 256, TRUE);
 	OutputLine(NULL, "何しろ、調べる団体が星の数だからね。",
 		   NULL, " Il faut dire que le nombre de groupes d'activistes à surveiller est vraiment énorme. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10051", 256, TRUE);
 	OutputLine(NULL, "　だから君の方の団体も、シロだとわかったらすぐに帰京して他の職員の応援に入ってもらいたいんだよ。",
 		   NULL, "Donc dès que tu as confirmation qu'ils ne sont pas dans le coup, reviens à Tôkyô, on a du boulot pour toi. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10052", 256, TRUE);
 	OutputLine(NULL, "……室長は鬼ヶ淵も洗っとけって言ってるけど、俺は鬼ヶ淵なんかの反ダム住民団体なんかは、今回の件、まったく無縁だと思ってるからね。",
 		   NULL, "Le chef veut que tu fasses ça proprement, mais franchement, tes ploucs, ils ont pas le niveau. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10053", 256, TRUE);
 	OutputLine(NULL, "…職員ひとりを、一団体調べさせるためだけに出張させるのは、すごく痛いよホント。」",
 		   NULL, "C'est dur de perdre des hommes comme toi en les envoyant à perpet' alors qu'on a tellement de choses à vérifier ici...", GetGlobalFlag(GLinemodeSp));
@@ -389,7 +389,7 @@ void main()
 
 
 //「うん。よろしくね＠　じゃ、他に何もなければ切るよ？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10054", 256, TRUE);
 	OutputLine(NULL, "「うん。よろしくね！",
 		   NULL, "— Ouais, merci.", Line_WaitForInput);
@@ -4887,7 +4887,7 @@ void main()
 
 
 //「……そら、……難儀なこともあったものよのぉ＠…くっくっくっく…！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô/color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s05/17/102300001", 256, TRUE);
 	OutputLine(NULL, "「……そら、……難儀なこともあったものよのぉ。",
 		   NULL, "— ... Eh bé, y a des gens qu'ont pas de chance, on dirait.", Line_WaitForInput);
