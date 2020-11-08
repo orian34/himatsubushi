@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //*Sub_Tips_066
@@ -310,9 +310,10 @@
 //　例えば、お隣で火事があったら、もちろん消火作業を手伝うでしょう＠　延焼して自分の家にまで火が付いたら困るものね＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　例えば、お隣で火事があったら、もちろん消火作業を手伝うでしょう？",
-		   NULL, "Imaginons que la maison mitoyenne de la vôtre se mette à brûler, forcément, vous allez amener de l'eau, aider à faire la chaîne, tenter d'aider votre voisin ?", Line_WaitForInput);
+		   NULL, "Imaginons que la maison mitoyenne de la vôtre se mette à brûler, forcément, vous allez amener de l'eau, aider à faire la chaîne, tenter d'aider votre voisin ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　延焼して自分の家にまで火が付いたら困るものね。",
-		   NULL, " Si jamais le feu devait se propager à votre maison, vous seriez bien embêté.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si jamais le feu devait se propager à votre maison, vous seriez bien embêté.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

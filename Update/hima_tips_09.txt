@@ -223,8 +223,8 @@
 
 	if(GetGlobalFlag(GLanguage) == 1)
 	{
-		Item[0] = "Open the red box";
-		Item[1] = "Open the blue box";
+		Item[0] = "Ouvrir la boîte rouge";
+		Item[1] = "Ouvrir la boîte bleu";
 	}
 	else
 	{

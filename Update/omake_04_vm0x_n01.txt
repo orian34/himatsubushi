@@ -1,4 +1,4 @@
-﻿
+
 void main()
 {
 
@@ -59,7 +59,8 @@ void dialog003()
 
 
 	DisableWindow();
-	ModDrawCharacter(1, 9, "sprite/normal/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacter(1, 9, "sprite/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 
 //　なるほど、部屋を真っ暗にした隙にどうにかしようという魂胆ね＠　くすくすくす…無駄な抵抗を。＠
@@ -86,7 +87,7 @@ void dialog004()
 
 //＜魅音
 	DisableWindow();
-	ModDrawCharacterWithFiltering(1, 2, "sprite/normal/re1b_okoru_b1_", "0", "left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 2, "sprite/re1b_okoru_b1_", "0", "left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「大丈夫、安心して＠照明を切ることで、……私たちはこの状況を逆転できるの！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -113,7 +114,7 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100222", 256, TRUE);
 	OutputLine(NULL, "「くっくっくっ……。",
-		   NULL, "— Héhhéhhé !", Line_WaitForInput);
+		   NULL, "—Héhhéhhé !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100223", 256, TRUE);
 	OutputLine(NULL, "　そうさ、今まではそうだった。」",
 		   NULL, " Tu as raison, j'en sors tout juste.", GetGlobalFlag(GLinemodeSp));
@@ -128,13 +129,15 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100225", 256, TRUE);
 	OutputLine(NULL, "「それでも他のキャラと比べても二倍、あるいは三倍以上もある分量をこなすなど不可能、",
-		   NULL, "— Mais j'ai toujours le double, voir le triple, de dialogues à doubler comparé aux autres personnages. C'est juste impossible, en fait !", Line_WaitForInput);
+		   NULL, "— Mais j'ai toujours le double, voir le triple, de dialogues à doubler comparé aux autres personnages. C'est juste impossible, en fait !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100226", 256, TRUE);
 	OutputLine(NULL, "というか最初から参加させる気ないだろ音響監督さんよぉぉっ！",
-		   NULL, " C'est comme si l'ingénieur du son avait prévu de m'en empêcher depuis le début !", Line_WaitForInput);
+		   NULL, "C'est comme si l'ingénieur du son avait prévu de m'en empêcher depuis le début !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100227", 256, TRUE);
 	OutputLine(NULL, "　と思って諦めてきたが……。」",
-		   NULL, " Enfin, c'est ce que je pensais…", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Enfin, c'est ce que je pensais…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -154,13 +157,15 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100230", 256, TRUE);
 	OutputLine(NULL, "「そう！",
-		   NULL, "— Oui.", Line_WaitForInput);
+		   NULL, "— Oui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100231", 256, TRUE);
 	OutputLine(NULL, "　主役として登場パターンが増えた詩音は、当然喋るワード数もこれまでの二倍！",
-		   NULL, " Vu que Shion est le personnage principal, elle apparait dans plus de scènes, elle a donc deux fois plus de lignes que d'habitude !", Line_WaitForInput);
+		   NULL, "Vu que Shion est le personnage principal, elle apparait dans plus de scènes, elle a donc deux fois plus de lignes que d'habitude !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100232", 256, TRUE);
 	OutputLine(NULL, "　しかも魅音とキャストが同じだからさらに二倍！」",
-		   NULL, " De plus, Shion et Mion ont toutes les deux la même comédienne de doublage, ça double encore la mise !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De plus, Shion et Mion ont toutes les deux la même comédienne de doublage, ça double encore la mise !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -227,16 +232,20 @@ void dialog006()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600170", 256, TRUE);
 	OutputLine(NULL, "「なるほど。",
-		   NULL, "— Aaah, effectivement, oui.", Line_WaitForInput);
+		   NULL, "— Aaah, effectivement, oui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600171", 256, TRUE);
 	OutputLine(NULL, "で？",
-		   NULL, " Et puis ? Qu'est-ce que tu veux que ça me foute ?", Line_WaitForInput);
+		   NULL, "Et puis ? Qu'est-ce que tu veux que ça me foute ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600172", 256, TRUE);
 	OutputLine(NULL, "　そのいまだに収録居残り中の圭ちゃんがどうやってここへ現れると？",
-		   NULL, " Comment il va faire pour venir alors qu'il est toujours au studio pour enregistrer ses dialogues ?", Line_WaitForInput);
+		   NULL, "Comment il va faire pour venir alors qu'il est toujours au studio pour enregistrer ses dialogues ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600173", 256, TRUE);
 	OutputLine(NULL, "　……まさか、圭ちゃんを私たちの誰かが追い抜いたわけでもあるまいに。",
-		   NULL, " … C'est pas comme si quelqu'un d'autre ici pouvait avoir plus de lignes à faire que lui.", Line_WaitForInput);
+		   NULL, "… C'est pas comme si quelqu'un d'autre ici pouvait avoir plus de lignes à faire que lui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600174", 256, TRUE);
 	OutputLine(NULL, "くっくっく…！！」",
 		   NULL, " Héhhéhhé !", GetGlobalFlag(GLinemodeSp));
@@ -339,17 +348,19 @@ void dialog012()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600181", 256, TRUE);
 	OutputLine(NULL, "「…甘いですね圭ちゃん。",
-		   NULL, "— Tsss, mon cœur, tu es trop naïf.", Line_WaitForInput);
+		   NULL, "— Tsss, mon cœur, tu es trop naïf.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600182", 256, TRUE);
 	OutputLine(NULL, "安易に闇の世界を生み出して、「妄想全開スチャラカ万歳！」ってやってしまうと、とある誰かも真の姿を現すことが可能になるのです。",
-		   NULL, " Certains des personnages qui ont déjà été dessinés peuvent avoir une version secrète qui ne se révèle que lorsqu'ils sont plongés dans les ténèbres...", Line_WaitForInput);
+		   NULL, "Certains des personnages qui ont déjà été dessinés peuvent avoir une version secrète qui ne se révèle que lorsqu'ils sont plongés dans les ténèbres...", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog013()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400273", 256, TRUE);
 	OutputLine(NULL, "　それはいくらなんでも反則…むが…！！！」",
-		   NULL, " Vous n'allez pas me dire qu'elle hmmrrrrr, mrrrr", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Vous n'allez pas me dire qu'elle hmmrrrrr, mrrrr", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -359,10 +370,11 @@ void dialog014()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600154", 256, TRUE);
 	OutputLine(NULL, "「ありゃ。",
-		   NULL, "— Ah bon ?", Line_WaitForInput);
+		   NULL, "— Ah bon ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600155", 256, TRUE);
 	OutputLine(NULL, "この後に収録予定の、",
-		   NULL, " C'est dommage, je comptais filmer sa rééducation en soubrette dévouée corps et âme,", Line_Continue);
+		   NULL, "C'est dommage, je comptais filmer sa rééducation en soubrette dévouée corps et âme,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1500 );
@@ -393,9 +405,10 @@ void dialog014()
 void dialog015()
 {
 //　お疲れ様会の度に＠　立ち絵がなく、慰労の一杯にすらありつけなかった俺の!w800/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100243", 256, TRUE);
 	OutputLine(NULL, "　お疲れ様会の度に！",
-		   NULL, " Je n'ai jamais le droit de venir trinquer avec vous !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je n'ai jamais le droit de venir trinquer avec vous !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100244", 256, TRUE);
 	OutputLine(NULL, "　常に居残りになって、慰労の一杯にすらありつけなかった俺の",
@@ -483,16 +496,19 @@ void dialog016()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "作品違うじゃねぇか！！！！",
-		   NULL, " C'est contre les règles !", Line_WaitForInput);
+		   NULL, " C'est contre les règles !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100281", 256, TRUE);
 	OutputLine(NULL, "　おい、こんなのナシだろ？！？！",
-		   NULL, " Nan mais vous pouvez pas faire ça, oh, déconnez pas, merde !", Line_WaitForInput);
+		   NULL, "Nan mais vous pouvez pas faire ça, oh, déconnez pas, merde !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100282", 256, TRUE);
 	OutputLine(NULL, "　わわ、ちょ、そのデカイのはまずいって！！！",
-		   NULL, " Non, non non, pas le gros, pas le gros !", Line_WaitForInput);
+		   NULL, "Non, non non, pas le gros, pas le gros !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100283", 256, TRUE);
 	OutputLine(NULL, "　えぇえ？！",
-		   NULL, " QUOI ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "QUOI ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100284", 256, TRUE);
 	OutputLine(NULL, "　は、早すぎるッ？！",
