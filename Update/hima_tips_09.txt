@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //*Sub_Tips_072
@@ -218,13 +218,14 @@
 
 	PlaySE( 3, "wa_044", 56, 64 );
 
-
+	DrawBustshot(5, "2choices", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, FALSE );
 	char Item[2];
 
 	if(GetGlobalFlag(GLanguage) == 1)
 	{
 		Item[0] = "Ouvrir la boîte rouge";
-		Item[1] = "Ouvrir la boîte bleu";
+		Item[1] = "Ouvrir la boîte verte";
+
 	}
 	else
 	{
@@ -234,6 +235,7 @@
 
 //	InitializeSelectedItem();
 	Select( 2, Item );
+	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
 	if(LoadValueFromLocalWork( SelectResult ) == 0)
 	{
 		SetGlobalFlag(redbox , TRUE);
