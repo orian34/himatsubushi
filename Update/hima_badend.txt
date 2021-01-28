@@ -59,7 +59,7 @@ void main()
 	ClearMessage();
 
 //誘拐犯rvS05/14/VT2_okonogi1001.「なっ？！kvS05/14/VT2_okonogi1002.　っち、こんダラズがぁぁッ！！」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>誘拐犯</color>", NULL, "<color=#f5e6d3>Kidnapper</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>誘拐犯</color>", NULL, "<color=#f5e6d3>Ravisseur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s05/14/vt2_okonogi1001", 256, TRUE);
 	OutputLine(NULL, "「なっ？！",
 			NULL, "— Hein ?!", Line_WaitForInput);
