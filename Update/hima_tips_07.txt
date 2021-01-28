@@ -480,10 +480,11 @@ void main()
 		   NULL, "— Alors quand il commence à bouger, il est presque impossible à arrêter.", Line_Continue);
 	Wait( 6500 );
 	OutputLine(NULL, "……回し始める一番初めが一番重い。",
-		   NULL, " ... Il faut faire beaucoup d'efforts pour le faire bouger une fois,", Line_WaitForInput);
+		   NULL, " ... Il faut faire beaucoup d'efforts pour le faire bouger une fois,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300020", 256, TRUE);
 	OutputLine(NULL, "それが嫌だから、みんな手を休めんと、ごりごり回し続けるんね。」",
-		   NULL, " alors les gens se débrouillent pour qu'une fois qu'il bouge, il puisse bien continuer de bouger.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "alors les gens se débrouillent pour qu'une fois qu'il bouge, il puisse bien continuer de bouger.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

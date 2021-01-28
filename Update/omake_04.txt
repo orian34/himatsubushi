@@ -454,16 +454,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300409", 256, TRUE);
 	OutputLine(NULL, "「あー、ダメダメ！",
-		   NULL, "— Aaah non, non, non !", Line_WaitForInput);
+		   NULL, "— Aaah non, non, non !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300410", 256, TRUE);
 	OutputLine(NULL, "　人間派はそういう得体の知れないファンタジーは一切認めないのー！",
-		   NULL, " C'est interdit, ce genre de trucs fantaisistes !", Line_WaitForInput);
+		   NULL, "C'est interdit, ce genre de trucs fantaisistes !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300411", 256, TRUE);
 	OutputLine(NULL, "　事件は全て人間の仕業！",
-		   NULL, " Tous les meurtres sont perpétrés par des humains !", Line_WaitForInput);
+		   NULL, "Tous les meurtres sont perpétrés par des humains !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300412", 256, TRUE);
 	OutputLine(NULL, "　祟りも魔法もイカサマもズルも一切なし！」",
-		   NULL, " Pas de malédiction, pas de magie, pas de bot avec visée automatique, pas de codes pour tricher, rien, nix, que dalle !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pas de malédiction, pas de magie, pas de bot avec visée automatique, pas de codes pour tricher, rien, nix, que dalle !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -501,15 +504,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300413", 256, TRUE);
 	OutputLine(NULL, "「まぁ、人間派にとっては、最後の最後でとにかくこれはデカい情報だね！",
-		   NULL, "— Oui bon, enfin bref, moi ce qui m'intéresse, c'est l'épilogue, c'est là que ça devient plus concret !", Line_WaitForInput);
+		   NULL, "— Oui bon, enfin bref, moi ce qui m'intéresse, c'est l'épilogue, c'est là que ça devient plus concret !", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacter(2, 3, "sprite/me1b_tokui_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　最初の事件から梨花ちゃんが殺され、大災害に至るまでが全てシナリオ＠つまり丸々１つの事件だったってことがわかるだけで、推理材料は格段に増えるんだから！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300414", 256, TRUE);
 	OutputLine(NULL, "　最初の事件から梨花ちゃんが殺され、大災害に至るまでが全てシナリオ。",
-		   NULL, " Tous les meurtres, depuis le premier, jusqu'à celui de Rika, et probablement jusqu'à la catastrophe naturelle, faisaient partie d'un seul et même plan ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tous les meurtres, depuis le premier, jusqu'à celui de Rika, et probablement jusqu'à la catastrophe naturelle, faisaient partie d'un seul et même plan ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300415", 256, TRUE);
 	OutputLine(NULL, "つまり丸々１つの事件だったってことがわかるだけで、推理材料は格段に増えるんだから！」",
@@ -2352,7 +2356,6 @@ void main()
 //　あぁ、ヒロインたちはこの闇を抜け出せず、魔王たちの思うがままに、恥ずかしい衣装を次々と強要され、/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ナレーター</color>", NULL, "<color=#f5e6d3>Narrateur</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/narra44007", 256, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　あぁ、ヒロインたちはこの闇を抜け出せず、魔王たちの思うがままに、恥ずかしい衣装を次々と強要され、",
 		   NULL, "Aaah, que va-t-il se passer pour les héroïnes de cette histoire ?", Line_Continue);
 
@@ -2464,7 +2467,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100274", 256, TRUE);
 	OutputLine(NULL, "　「男子本懐ここに極まれり！",
-		   NULL, "'This is the ultimate desire of young men!", Line_WaitForInput);
+		   NULL, "Il a été ému par mes desseins virils", Line_WaitForInput);
 
 	PlaySE( 3, "wa_011", 56, 64 );
 
@@ -2666,7 +2669,7 @@ void main()
 	ModDrawCharacter(2, 2, "sprite/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「もうすでにご存知と思いますが、『ひぐらしのなく頃に』は選択肢のないタイプのサウンドノベルです＠ですので、選択肢を選ぶＡＤＶ的なサウンドノベルに比べると、小説や映画に近いセンスだったと思います＠…その意味において、ゲームと呼ぶべきではないのではないか、というご意見を頂戴することもあります。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", "<size=-3>", Line_ContinueAfterTyping); }
 //	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200340", 128, TRUE);
 	OutputLine(NULL, "「もうすでにご存知と思いますが、「ひぐらしのなく頃に」は選択肢のないタイプのサウンドノベルです。",
 		   NULL, "— Je pense que vous êtes déjà au courant -- et que vous n'êtes pas assez stupide pour ne pas l'avoir remarqué -- mais juste histoire d'être claire : ce jeu est un roman sonore qui ne vous offre aucun choix dans la narration. ", GetGlobalFlag(GLinemodeSp));
@@ -2704,7 +2707,7 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200346", 256, TRUE);
 	OutputLine(NULL, "プレイヤーの皆さんには、この謎に満ちた物語を様々な角度から捉え、吟味する権利があります。",
 		   NULL, "Cela pourrait être très intéressant d'avoir un espace sur le site officiel où les lecteurs pourraient échanger leurs théories sur les meurtres. Cela serait sûrement très amusant de les lire ! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", "<size=-7>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200347", 256, TRUE);
 	OutputLine(NULL, "…例えば、劇中に散りばめられた謎について、推理をし、それを発表して反響を得たりすることもまた、楽しいかと思います。",
 		   NULL, "Il existe sur le site officiel japonais des forums où l'on pouvait en discuter, mais c'était à l'époque où la solution du jeu n'était pas encore sortie. Est-ce qu'un forum public serait vraiment utile sur le site français ? Il y aura certainement des idiots pour venir tous les jours spoiler la solution, et je ne suis pas sûre que la modération soit capable de limiter la casse à chaque fois. Surtout que Wikipédia donne la solution aussi, assez tôt dans l'article en plus. N'allez pas vérifier si je dis vrai, je vous en supplie !", Line_Normal);

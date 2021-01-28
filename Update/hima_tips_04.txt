@@ -58,9 +58,10 @@ void main()
 //　だから彼は、車が止まってエンジンが切られて不愉快な振動がなくなった時＠事態は何も解決していないにも関わらず、自分は解放されたのだ…と錯覚せずにはいられなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから彼は、車が止まってエンジンが切られて不愉快な振動がなくなった時、",
-		   NULL, "C'est pourquoi, lorsque la voiture s'arrêta et qu'il ne sentit plus les vibrations qui le gênaient,", Line_WaitForInput);
+		   NULL, "C'est pourquoi, lorsque la voiture s'arrêta et qu'il ne sentit plus les vibrations qui le gênaient,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "事態は何も解決していないにも関わらず、自分は解放されたのだ…と錯覚せずにはいられなかった。",
-		   NULL, " il se sentit très rassuré, comme délivré, presque -- alors que pourtant, sa situation ne s'était pas améliorée d'un iota.", Line_Normal);
+		   NULL, "il se sentit très rassuré, comme délivré, presque -- alors que pourtant, sa situation ne s'était pas améliorée d'un iota.", Line_Normal);
 	ClearMessage();
 
 

@@ -134,12 +134,13 @@ void main()
 //　そういうことに青春を費やすのが、男の花道のように思っている輩が幅を利かせている時代があった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そういうことに青春を費やすのが、男の花道のように思っている輩が幅を利かせている時代があった。",
-		   NULL, "Certains pensaient que ces affrontements étaient une période glorieuse qui avaient su faire de vrais hommes avec les petits planqués qui faisaient des études...", Line_WaitForInput);
+		   NULL, "Certains pensaient que ces affrontements étaient une période glorieuse qui avaient su faire de vrais hommes avec les petits planqués qui faisaient des études...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 
 //……世代的には、私より少し前になるが￥
 	OutputLine(NULL, "……世代的には、私より少し前になるが。",
-		   NULL, " Tout cela avait fini peu avant le début de mes études, d'ailleurs.", Line_Normal);
+		   NULL, "Tout cela avait fini peu avant le début de mes études, d'ailleurs.", Line_Normal);
 	ClearMessage();
 
 
@@ -736,7 +737,6 @@ void main()
 
 //　朗らかに笑うが、…きっと怒ると怖いに違いない、そんな風貌の老人は……何と、鬼ヶ淵死守同盟の会長、…公由喜一郎氏本人だった…￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "　朗らかに笑うが、…きっと怒ると怖いに違いない、そんな風貌の老人は……何と、鬼ヶ淵死守同盟の会長、…公由喜一郎氏本人だった…。",
 		   NULL, "Un vieil homme souriant, qui devait sûrement tirer une tête effrayante quand il s'énervait, s'approcha de moi. Alors c'était lui, le chef de l'association... Kiichirô Kimiyoshi, en chair et en os…", Line_Normal);
 	ClearMessage();
@@ -1701,13 +1701,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 27, "ps3/s05/27/100500070", 256, TRUE);
 	OutputLine(NULL, "「…………………警告はした。",
-		   NULL, "— ... ... Bon écoute, je t'ai prévenu, viens pas te plaindre après.", Line_WaitForInput);
+		   NULL, "— ... ... Bon écoute, je t'ai prévenu, viens pas te plaindre après.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 27, "ps3/s05/27/100500071", 256, TRUE);
 	OutputLine(NULL, "…勘違いしないでほしいのは、…私があなたを嫌いだからこういうことを言ってるわけじゃないってこと。",
-		   NULL, " Que ce soit bien clair entre nous, je ne dis pas ça parce que je te déteste ou quoi que ce soit.", Line_WaitForInput);
+		   NULL, "Que ce soit bien clair entre nous, je ne dis pas ça parce que je te déteste ou quoi que ce soit.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 27, "ps3/s05/27/100500072", 256, TRUE);
 	OutputLine(NULL, "………死んでもいい人に、危険なんかを教える必要はないのだし。」",
-		   NULL, " Je ne suis pas du genre à perdre mon temps à sauver de la mort des gens dont je n'ai rien à foutre.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je ne suis pas du genre à perdre mon temps à sauver de la mort des gens dont je n'ai rien à foutre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

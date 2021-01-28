@@ -339,7 +339,7 @@ void main()
 		   NULL, " Après tout, quelle importance !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700611", 256, TRUE);
 	OutputLine(NULL, "んっふっふっふ！」",
-		   NULL, " Éhhéhhéhhé !", Line_Normal);
+		   NULL, "Éhhéhhéhhé !", Line_Normal);
 	ClearMessage();
 
 
@@ -475,13 +475,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700621", 256, TRUE);
 	OutputLine(NULL, "「まぁさかぁ。",
-		   NULL, "— Non mais ça va la tête ?", Line_WaitForInput);
+		   NULL, "— Non mais ça va la tête ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700622", 256, TRUE);
 	OutputLine(NULL, "いろいろと黒い噂こそ絶えませんがね、園崎家に恨みがあるわけじゃありませんので。",
-		   NULL, " Les rumeurs sur eux vont bon train, et je suis pas innocent à ce sujet, mais je ne vais pas en faire non plus une affaire personnelle.", Line_WaitForInput);
+		   NULL, "Les rumeurs sur eux vont bon train, et je suis pas innocent à ce sujet, mais je ne vais pas en faire non plus une affaire personnelle.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700623", 256, TRUE);
 	OutputLine(NULL, "君子、危うきに近寄らない方がいいんですよ。",
-		   NULL, " Et puis, quand le prince est en danger, il vaut mieux se faire discret, si vous voyez ce que je veux dire.", Line_WaitForInput);
+		   NULL, "Et puis, quand le prince est en danger, il vaut mieux se faire discret, si vous voyez ce que je veux dire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700624", 256, TRUE);
 	OutputLine(NULL, "なっはっはっは。」",
 		   NULL, " Éhhéhhéhhé !", GetGlobalFlag(GLinemodeSp));
@@ -687,16 +690,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700644", 256, TRUE);
 	OutputLine(NULL, "「少し傷が重いフリをして、興宮にしばらく滞在しません？",
-		   NULL, "— Vous pourriez faire du chiqué et rester un peu ici,", Line_WaitForInput);
+		   NULL, "— Vous pourriez faire du chiqué et rester un peu ici,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700645", 256, TRUE);
 	OutputLine(NULL, "　いいお店をいろいろ紹介しますよ。",
-		   NULL, " je peux vous faire entrer dans pleins d'endroits super, avec de la boisson, des filles, tout ce qu'il faut !", Line_WaitForInput);
+		   NULL, "je peux vous faire entrer dans pleins d'endroits super, avec de la boisson, des filles, tout ce qu'il faut !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700646", 256, TRUE);
 	OutputLine(NULL, "もちろん、オゴレなんて言いません。",
-		   NULL, " Bien sûr, je paierai mes propres consommations, ne vous en faites pas !", Line_WaitForInput);
+		   NULL, "Bien sûr, je paierai mes propres consommations, ne vous en faites pas !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700647", 256, TRUE);
 	OutputLine(NULL, "なっはっはっは！」",
-		   NULL, " Ahahahahahahahahahaha !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ahahahahahahahahahaha !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

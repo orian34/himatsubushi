@@ -225,6 +225,7 @@ void main()
 	{
 		Item[0] = "Ouvrir la boîte rouge";
 		Item[1] = "Ouvrir la boîte verte";
+
 	}
 	else
 	{

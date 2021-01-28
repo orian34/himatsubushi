@@ -17,16 +17,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700391", 256, TRUE);
 	OutputLine(NULL, "「えぇえぇ、皆さんもご苦労さんなことです。",
-		   NULL, "— Oui, bien sûr, je comprends. Vous avez bien du courage !", Line_WaitForInput);
+		   NULL, "— Oui, bien sûr, je comprends. Vous avez bien du courage !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700392", 256, TRUE);
 	OutputLine(NULL, "お暑いでしょうが、せいぜい頑張って下さいよ。",
-		   NULL, " Il fait pourtant tellement chaud, je vous plains.", Line_WaitForInput);
+		   NULL, "Il fait pourtant tellement chaud, je vous plains.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700393", 256, TRUE);
 	OutputLine(NULL, "不法投棄のダンプが現れたらすぐにご連絡下さい。",
-		   NULL, " Si vous trouvez un petit malin qui vient jeter ses déchets industriels, prévenez-moi tout de suite !", Line_WaitForInput);
+		   NULL, "Si vous trouvez un petit malin qui vient jeter ses déchets industriels, prévenez-moi tout de suite !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700394", 256, TRUE);
 	OutputLine(NULL, "急行いたしますのでね。」",
-		   NULL, " Je le ferai écrouer sur-le-champ.", Line_Normal);
+		   NULL, "Je le ferai écrouer sur-le-champ.", Line_Normal);
 	ClearMessage();
 
 
@@ -293,9 +296,10 @@ void main()
 //　大石氏と一緒にいるからドライブをしていられるのであって＠………自分がこの車を下車して自動販売機でも探しに出掛けたなら、……帰ってこられない可能性だってあるのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石氏と一緒にいるからドライブをしていられるのであって、",
-		   NULL, "Ils sont juste là pour que les choses s'enlisent...", Line_WaitForInput);
+		   NULL, "Ils sont juste là pour que les choses s'enlisent...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "………自分がこの車を下車して自動販売機でも探しに出掛けたなら、……帰ってこられない可能性だってあるのだ。",
-		   NULL, " Je suis uniquement ici parce que c'est l'inspecteur qui conduit, en fait. Si je sors de cette voiture pour acheter une boisson à un distributeur, il y a des chances pour que je n'en revienne pas vivant...", Line_Normal);
+		   NULL, "Je suis uniquement ici parce que c'est l'inspecteur qui conduit, en fait. Si je sors de cette voiture pour acheter une boisson à un distributeur, il y a des chances pour que je n'en revienne pas vivant...", Line_Normal);
 	ClearMessage();
 
 

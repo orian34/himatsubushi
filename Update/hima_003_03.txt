@@ -244,13 +244,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700487", 256, TRUE);
 	OutputLine(NULL, "「大臣の孫も、もう誘拐されてから何日にもなって可哀想だ。",
-		   NULL, "— Oui. Elle disait qu'elle avait de la peine pour lui, que ça faisait déjà plusieurs jours qu'il avait été enlevé, et qu'il devait avoir très peur.", Line_WaitForInput);
+		   NULL, "— Oui. Elle disait qu'elle avait de la peine pour lui, que ça faisait déjà plusieurs jours qu'il avait été enlevé, et qu'il devait avoir très peur.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700488", 256, TRUE);
 	OutputLine(NULL, "そろそろ解放されるといいなぁ、と。",
-		   NULL, " Elle a dit qu'elle espérait qu'il serait relâché bientôt.", Line_WaitForInput);
+		   NULL, "Elle a dit qu'elle espérait qu'il serait relâché bientôt.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700489", 256, TRUE);
 	OutputLine(NULL, "そうお魎の婆さんが、縁側でぼそりと呟いたってな話らしいんです。",
-		   NULL, " Quelque chose de ce style en tout cas. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Quelque chose de ce style en tout cas. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700490", 256, TRUE);
 	OutputLine(NULL, "で、そのぼそりが園崎家の裏の裏のあちこちに伝えられてるようです。」",
@@ -670,10 +672,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700518", 256, TRUE);
 	OutputLine(NULL, "まぁ、そんな便利な神さまがいたら、ダムの連中はとっくに神罰にやられているんでしょうが。",
-		   NULL, "En même temps, si on avait une déesse aussi pratique sous le coude, je crois que tous les gens en rapport avec le barrage seraient morts depuis un moment.", Line_WaitForInput);
+		   NULL, "En même temps, si on avait une déesse aussi pratique sous le coude, je crois que tous les gens en rapport avec le barrage seraient morts depuis un moment.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700519", 256, TRUE);
 	OutputLine(NULL, "幸い、今日までそのバチってヤツはひとつも起こってませんがね。」",
-		   NULL, " Je touche du bois, mais pour l'instant, tout le monde est bien vivant.", Line_Normal);
+		   NULL, "Je touche du bois, mais pour l'instant, tout le monde est bien vivant.", Line_Normal);
 	ClearMessage();
 
 
@@ -1088,10 +1091,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700548", 256, TRUE);
 	OutputLine(NULL, "「山間の段々畑で農作業中に誰かが倒れたってのでない限りね。",
-		   NULL, "— Exactement. Alors bon, c'est peut-être un homme qui travaillait aux champs qui s'est blessé.", Line_WaitForInput);
+		   NULL, "— Exactement. Alors bon, c'est peut-être un homme qui travaillait aux champs qui s'est blessé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700549", 256, TRUE);
 	OutputLine(NULL, "人が倒れて医者が呼ばれたら、普通は連れ帰ってくわしく調べるもんです。",
-		   NULL, " Mais il a bien fallu aller le prévenir, le médecin, non ? Alors quitte à aller à la clinique, autant ramener le patient là-bas en même temps, vous ne croyez pas ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais il a bien fallu aller le prévenir, le médecin, non ? Alors quitte à aller à la clinique, autant ramener le patient là-bas en même temps, vous ne croyez pas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2061,7 +2065,7 @@ void main()
 
 
 //　そればかりか、大石は両腕の肘を丸ごと外へ極められ、不自然な体勢となって、両腕を相手の胸元に預けたまま背中を晒しそうになってしまう￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そればかりか、大石は両腕の肘を丸ごと外へ極められ、不自然な体勢となって、両腕を相手の胸元に預けたまま背中を晒しそうになってしまう！",
 		   NULL, "Puis il les repoussa du côté, en faisant pression sur les coudes. L'inspecteur se retrouva dans une position tout sauf naturelle, montrant son dos alors que ses mains tenaient toujours la chemise de son adversaire !", Line_Normal);
 	ClearMessage();

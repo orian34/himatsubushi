@@ -75,20 +75,22 @@ void main()
 		   NULL, "— Reste en uniforme de l'école, faut pas en faire trop, ce serait pas naturel.", Line_Continue);
 	Wait( 2500 );
 	OutputLine(NULL, "前のボタンはちゃあんと止めてくんねよ。",
-		   NULL, " T'as recousu le bouton, au moins ?", Line_WaitForInput);
+		   NULL, " T'as recousu le bouton, au moins ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300029", 256, TRUE);
 	OutputLine(NULL, "香典は、５万、",
-		   NULL, " Pour l'obole, mets 50 000.", Line_Continue);
+		   NULL, "Pour l'obole, mets 50 000.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 2200 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……ん〜、１０万包んだれな。",
-		   NULL, " Hmmm, non, mets plutôt 100 000,", Line_WaitForInput);
+		   NULL, " Hmmm, non, mets plutôt 100 000,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300030", 256, TRUE);
 	OutputLine(NULL, "世話になったかんなぁ。」",
-		   NULL, " il nous a souvent été utile dans sa carrière.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "il nous a souvent été utile dans sa carrière.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
