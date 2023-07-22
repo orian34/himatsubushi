@@ -4927,7 +4927,7 @@ void main()
 
 
 //「……我等にとって土地が母なら、…此度のダムの騒ぎは、母の命を脅かされる騒ぎちゅうこったろなぁ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô/color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s05/17/102300003", 256, TRUE);
 	OutputLine(NULL, "「……我等にとって土地が母なら、…此度のダムの騒ぎは、母の命を脅かされる騒ぎちゅうこったろなぁ。」",
 		   NULL, "— Pour nous autres, cette terre est notre mère à tous. Ce projet de barrage est un peu une atteinte à sa vie.", Line_Normal);
@@ -4956,7 +4956,7 @@ void main()
 	ModDrawCharacter(1, 17, "sprite/oryou_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「…ダムの親玉の大臣がの、…孫、さらわれちまって、右往左往しとるっちゅう話だ＠こんれでお相子だの＠…くっくっくっく！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô/color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s05/17/102300004", 256, TRUE);
 	OutputLine(NULL, "「…ダムの親玉の大臣がの、…孫、さらわれちまって、右往左往しとるっちゅう話だ。",
 		   NULL, "— Le ministre qui a mis ce projet en place... Il ne trouve plus son petit-fils, il paraît qu'il le cherche partout !", Line_WaitForInput);
@@ -5100,7 +5100,7 @@ void main()
 
 
 //「我らの痛みは母を失う痛みじゃの＠……それに値するとは思わんが、孫を失う痛み＠……くっくっくっく＠　少しは堪えるいいんじゃがのぉ＠………なぁ？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô/color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s05/17/102300007", 256, TRUE);
 	OutputLine(NULL, "「我らの痛みは母を失う痛みじゃの。",
 		   NULL, "— Notre douleur est comparable à celle d'un enfant qui perd sa mère.", Line_WaitForInput);
@@ -5132,7 +5132,7 @@ void main()
 
 
 //「……………だが、…土地と人様の子どもでは訳が違うの＠…………隠すのは構わんが、…怪我だけはさせたくないものよの＠…子には何の罪もね＠…大事にしたれな。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô/color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s05/17/102300012", 256, TRUE);
 	OutputLine(NULL, "「……………だが、…土地と人様の子どもでは訳が違うの。",
 		   NULL, "— ... Mais bon. Un terrain, ce n'est pas un être humain.", Line_WaitForInput);
@@ -5778,7 +5778,7 @@ void main()
 
 
 //「……はるばる雛見沢まで来よったん＠…しばらくはのんびりさせてやるのもよかろ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô/color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s05/17/102300016", 256, TRUE);
 	OutputLine(NULL, "「……はるばる雛見沢まで来よったん。",
 		   NULL, "— Bah, il a fait tout le voyage depuis la capitale,", Line_WaitForInput);
@@ -5813,7 +5813,7 @@ void main()
 
 
 //「………ほっといたれな＠…が、……あぁんまりオイタが過ぎるよぅやったん、そん時ゃ、遠慮せんとな＠…舐められるのは、好っきゃせんね。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô/color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s05/17/102300018", 256, TRUE);
 	OutputLine(NULL, "「………ほっといたれな。",
 		   NULL, "— Bah, il n'en vaut pas la peine.", Line_WaitForInput);
