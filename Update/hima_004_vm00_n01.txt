@@ -15,46 +15,8 @@ void dialog000()
 
 void dialog001()
 {
-//「で、その富竹氏の恋仲の女性が岐阜の山中で焼死体に＠岐阜県警さんがあんまり協力的じゃなかったもんで、こっちはあまりよく状況を知らないんですがね。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700732", 256, TRUE);
-	OutputLine(NULL, "「で、その富竹氏の恋仲の女性が岐阜の山中で焼死体に。",
-		   NULL, "— Et la petite amie de ce mec, une certaine Miyo Takano, a été retrouvée dans les montagnes de Gifu, juste à côté, brûlée vive dans un vieux baril de pétrole.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700733", 256, TRUE);
-	OutputLine(NULL, "岐阜県警さんがあんまり協力的じゃなかったもんで、こっちはあまりよく状況を知らないんですがね。」",
-		   NULL, "J'en sais pas beaucoup plus, parce que les collègues de Gifu n'ont pas été très coopératifs.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
 {
-//「……………性的な変質者の犯行？￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300719", 256, TRUE);
-	OutputLine(NULL, "「……………性的な変質者の犯行？」",
-		   NULL, "— ... Une agression sexuelle ?", Line_Normal);
-	ClearMessage();
-
-	DisableWindow();
-	DrawScene("background/aka2", 400 );
-
-//「司法解剖の結果、性的暴行の痕跡は認められませんでした＠/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700768", 256, TRUE);
-	OutputLine(NULL, "「司法解剖の結果、性的暴行の痕跡は認められませんでした。",
-		   NULL, "— L'autopsie dit que non. ", GetGlobalFlag(GLinemodeSp));
-
-	PlaySE( 3, "wa_025", 56, 64 );
-
-//……わかったのは、薬物で昏睡させられてから、あの場所へ運ばれ、腹部を切開、開腹＠意図的に臓器を引きずり出して、四方に散らして見せました。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700769", 256, TRUE);
-	OutputLine(NULL, "……わかったのは、薬物で昏睡させられてから、あの場所へ運ばれ、腹部を切開、開腹。",
-		   NULL, "La seule chose qui est sûre, c'est qu'on l'a d'abord rendue inconsciente, puis transportée là. Puis on lui a ouvert l'abdomen, et écarté la chair.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/100700770", 540, TRUE);
-	OutputLine(NULL, "意図的に臓器を引きずり出して、四方に散らして見せました。」",
-		   NULL, "Les organes internes ont été sectionnés et retirés, l'un après l'autre, et placés à ses côtés, un peu partout.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

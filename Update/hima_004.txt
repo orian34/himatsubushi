@@ -1841,10 +1841,16 @@ void main()
 	DisableWindow();
 	DrawSceneWithMask("flashback/mo2", "right", 0, 0, 300 );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("hima_004_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("hima_004_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+//「で、その富竹氏の恋仲の女性が岐阜の山中で焼死体に＠岐阜県警さんがあんまり協力的じゃなかったもんで、こっちはあまりよく状況を知らないんですがね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi3006", 256, TRUE);
+	OutputLine(NULL, "「で、その富竹氏の恋仲の女性が岐阜の山中で焼死体に。",
+		   NULL, "— Et la petite amie de ce mec, une certaine Miyo Takano, a été retrouvée dans les montagnes de Gifu, juste à côté, brûlée vive dans un vieux baril de pétrole.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi3007", 256, TRUE);
+	OutputLine(NULL, "岐阜県警さんがあんまり協力的じゃなかったもんで、こっちはあまりよく状況を知らないんですがね。」",
+		   NULL, "J'en sais pas beaucoup plus, parce que les collègues de Gifu n'ont pas été très coopératifs.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -2111,10 +2117,34 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("hima_004_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("hima_004_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+//「……………性的な変質者の犯行？￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300719", 256, TRUE);
+	OutputLine(NULL, "「……………性的な変質者の犯行？」",
+		   NULL, "— ... Une agression sexuelle ?", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("background/aka2", 400 );
+
+//「司法解剖の結果、性的暴行の痕跡は認められませんでした＠/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi3008", 256, TRUE);
+	OutputLine(NULL, "「司法解剖の結果、性的暴行の痕跡は認められませんでした。",
+		   NULL, "— L'autopsie dit que non. ", GetGlobalFlag(GLinemodeSp));
+
+	PlaySE( 3, "wa_025", 56, 64 );
+
+//……わかったのは、薬物で昏睡させられてから、あの場所へ運ばれ、腹部を切開、開腹＠意図的に臓器を引きずり出して、四方に散らして見せました。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi3009", 256, TRUE);
+	OutputLine(NULL, "……わかったのは、薬物で昏睡させられてから、あの場所へ運ばれ、腹部を切開、開腹。",
+		   NULL, "La seule chose qui est sûre, c'est qu'on l'a d'abord rendue inconsciente, puis transportée là. Puis on lui a ouvert l'abdomen, et écarté la chair.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi3010", 540, TRUE);
+	OutputLine(NULL, "意図的に臓器を引きずり出して、四方に散らして見せました。」",
+		   NULL, "Les organes internes ont été sectionnés et retirés, l'un après l'autre, et placés à ses côtés, un peu partout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「…………昏睡＠　…では、開腹は死後ではなく？＠
@@ -2249,12 +2279,12 @@ void main()
 
 //「雛見沢村のお祭りの『綿流し』ってのはそもそも、……ワタ流し、つまり、臓物流しから転じたものらしいんです＠……何でも、人食い鬼たちが、犠牲者をバラして、内蔵を川に捨てた…というところから転じたらしいんですよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", "<size=-4>", Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/100700774", 540, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi3011", 256, TRUE);
 	OutputLine(NULL, "「雛見沢村のお祭りの「綿流し」ってのはそもそも、……ワタ流し、つまり、臓物流しから転じたものらしいんです。",
 		   NULL, "— En fait, la fête de la purification du coton, ça vient d'un rituel ancestral pratiqué dans le village, mais c'était pas du coton qu'ils jetaient dans la rivière, vous voyez ce que je veux dire ? Aujourd'hui, quand on dit wata on pense à l'idéogramme du coton, mais il semblerait que jadis, c'était plutôt les entrailles qui étaient désignées par ce mot. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/100700775", 540, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi3012", 256, TRUE);
 	OutputLine(NULL, "……何でも、人食い鬼たちが、犠牲者をバラして、内蔵を川に捨てた…というところから転じたらしいんですよ。」",
 		   NULL, "Et donc, les démons mangeurs d'hommes, en fait, le soir de la fête, ils découpaient leurs victimes en morceaux et ils jetaient ses entrailles dans la rivière. Vous voyez ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4125,6 +4155,8 @@ void main()
 
 	DisableWindow();
 	DrawBustshot(4, "scene/203b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(1, 179, "none");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 27, "sprite/rim_warai", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
 
 //  梨花rvs05/27/rikaDS22001.「…赤坂。kvs05/27/rikaDS22002.泣かないでくださいなのです」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
